@@ -8,7 +8,7 @@ body {
 }
     
 h1 {
-    color: #005f73;
+    color: whitesmoke;
     text-align: left;
     margin-top: 10px;
     font-family: cursive;
@@ -22,13 +22,13 @@ h2 {
 
 .navContainer {
     height: 50px;
-    background-color: whitesmoke;
+    background-color: #e9d8a6;
     text-align: right;
     font-weight: bold;
-    word-spacing: 5pt;
+    word-spacing: 10pt;
     padding-top: 20px;
-    padding-right: 20px;
-    margin-left: 500px;
+    padding-right: 50px;
+    width: 100%;
 }
 a {
     color: #ca6702;
@@ -41,31 +41,41 @@ a:hover {
 }
 .titleBar {
     border: solid #005f73;
-    height: 200px;
+    background-color: #005f73;
+    height: 120px;
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+    width: 100%;
 }
 
-.profilePic {
-
-}
-.pets {
+.photos {
     text-align: center;
 }
 
-.pictures {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.homepics {
+ display: flex;
 }
 
+.sagrada {
+    flex: 30%;
+    padding: 10px;
+}
+
+.delicate {
+    width: 100%;
+    padding: 10px;
+}
 .paragraph {
     color: #609e8a;
+}
+
+#games {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 form {
@@ -75,4 +85,19 @@ form {
     font-weight: 900px;
     border-radius: 5px;
     width: 500px;
+  }
+
+  button {
+      background-color: #e9d8a6;
+      border: #e9d8a6;
+      color:#ca6702;
+      font-size: 12pt;
+      padding: 5px;
+      border-radius: 5px;
+      margin-top: 5px;
+      transition-duration: 0.4s; 
+  }
+  
+  button:hover {
+      background-color: #d5b657;
   }

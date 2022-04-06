@@ -22,11 +22,17 @@
     <!--TopTitleBar-->
     <div class="titleBar">
       <h1>Joanne Tang</h1>
-      <h2>Welcome everyone!</h2>
     </div>
+    <h2>Welcome everyone!</h2>
+
     <!--Image-->
-    <div class="pictures">
-      <img src="Photos/La_Sagrada.jpeg" alt="In Barcelona" class="Pic" />
+    <div class="homepics">
+      <div class="sagrada">
+        <img src="Photos/La_Sagrada.jpeg" alt="In Barcelona" />
+      </div>
+      <div class="delicate">
+        <img src="Photos/Delicate_Arch.JPG" alt="Arches National Park" />
+      </div>
     </div>
     <!--runningSection-->
     <div class="paragraph">
@@ -37,19 +43,28 @@
         where I received my Bachelor's in Nutrition and Dietetics.
       </p>
       <p>
-        I have one cat, Zoto, and am getting a puppy soon. In my free-time I
-        enjoy traveling, hiking, snowboarding, rock climbing, and aerial arts. I
-        became interested in coding over the last year and learn in my spare
-        time. I look forward to this bootcamp and starting a new career.
+        I have a cat, Zoto, and a puppy, Meika. I enjoy traveling, hiking, and
+        watching sunrises/sunsets. One of my life goals is to visit all the
+        national parks (currently at 10). I became interested in coding over the
+        last year and learn in my spare time. I look forward to this bootcamp
+        and starting a new career in tech.
       </p>
+      <div>
+        <ul>
+          <p id="games">Favorite Hobbies</p>
+          <li>Snowboarding</li>
+          <li>Lyra</li>
+          <li>Rock Climbing</li>
+        </ul>
+      </div>
     </div>
     <form>
       <h3>Contact Form</h3>
-      Name: <br />
+      Name:
       <input type="text" name="name" /><br />
-      E-mail: <br />
+      E-mail:
       <input type="text" name="email" /><br />
-      Phone Number: <br />
+      Phone Number:
       <input type="text" name="phonenumber" /><br />
       Preferred Contact: <br />
       <input type="radio" name="contact" value="e-mail" />
@@ -60,11 +75,11 @@
       <input
         type="text"
         name="message"
-        value="type your message here"
-        style="height: 200px; width: 400px"
+        value="Type your message here"
+        style="height: 100px; width: 300px"
       />
       <br />
-      <input type="button" name="submit" value="submit" />
+      <button type="button">Submit</button>
     </form>
     <script src=""></script>
   </body>
