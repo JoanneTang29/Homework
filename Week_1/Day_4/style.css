@@ -1,0 +1,42 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 800px;
+    margin: 50px;
+}
+h1 {
+    background-color: #8d99ae;
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+    padding: 40px;
+}
+
+.navContainer {
+    background-color: #9a8c98;
+    padding: 20px;
+    text-align: center;
+    word-spacing: 20pt;
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color:#f2e9e4
+}
+a:hover{
+    text-decoration: underline; 
+}
+
+#searchbar {
+    text-align: right;
+}
+.shoes {
+    border: 2pt black solid;
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
+
+button {
+    margin-bottom: 10px;
+}
