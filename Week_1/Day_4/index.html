@@ -5,39 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Clothing Store</title>
+    <title>Shoe Store</title>
   </head>
+
   <body>
     <h1>Shoe Store</h1>
     <div class="navContainer">
       <nav>
         <a href="">Men's</a>
         <a href="">Women's</a>
-        <a href="">Kids</a>
+        <a href="">Kids'</a>
       </nav>
     </div>
+
+    <div class="cartContainer">
+      <button class="cartButton">
+        <img src="Photos/cart-gc4e1c297a_640.png" alt="cart" class="cartLogo" />
+        <span id="numberHolder">0</span>
+      </button>
+    </div>
+
     <div id="searchbar">
       <input type="text" name="search" style="width: 250px" />
       <button>Search</button>
     </div>
+
     <div class="shoes">
       <br />
-      <img src="Photos/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg" alt="Nike" />
-      <p>Nike</p>
-      <button>Add to Cart</button>
+
+      <div class="nikeProduct">
+        <img src="Photos/jeff-tumale-SD9Jyl1xNQ4-unsplash.jpg" alt="Nike" />
+        <p>Nike</p>
+        <button onclick="addToCart(1, 'nike')">Add to Cart</button>
+      </div>
+
       <br />
+
       <img src="Photos/will-suddreth-mgweTPIa2Pc-unsplash.jpg" alt="Adidas" />
       <p>Adidas</p>
-      <button>Add to Cart</button>
+      <button onclick="addToCart(1, 'adidas')">Add to Cart</button>
+
       <br />
+
       <img
         src="Photos/the-dk-photography-NUoPWImmjCU-unsplash (1).jpg"
         alt="Puma"
       />
       <p>Puma</p>
-      <button>Add to Cart</button>
-      <p></p>
+      <button onclick="addToCart(1, 'puma')">Add to Cart</button>
+
+      <br />
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

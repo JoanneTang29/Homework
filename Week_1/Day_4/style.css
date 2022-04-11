@@ -1,6 +1,6 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 800px;
+    width: auto;
     margin: 50px;
 }
 h1 {
@@ -27,16 +27,48 @@ a:hover{
     text-decoration: underline; 
 }
 
+.cartContainer {
+    text-align: right;
+}
+
+.cartButton {
+    border: double black 5pt;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14pt;
+}
+
+.cartButton:hover {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14pt;
+    border: double #f2e9e4 5pt;
+    background: #9a8c98;
+    color: #f2e9e4;
+}
+
 #searchbar {
     text-align: right;
 }
+
+input {
+    height: 16pt;
+}
+
 .shoes {
     border: 2pt black solid;
     text-align: center;
+    padding: 20px;
     margin: auto;
     width: auto;
 }
 
 button {
     margin-bottom: 10px;
+    font-size: 14pt;
+}
+
+button:hover {
+    background-color: #9a8c98;
+    color: #f2e9e4;
 }
