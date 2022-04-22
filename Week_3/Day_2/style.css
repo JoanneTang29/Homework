@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    background-image: url("https://flxt.tmsimg.com/assets/p15432366_b_h9_aa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template:auto;
+    height: 100vh;
+}
+
+.gridItem{
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+}
+
+.gridItem:hover{
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    opacity: 0;
+}

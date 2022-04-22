@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Timer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <input id="txtTempo" type="text" value="10" size="4" maxlength="4" />
+      <button id="btnStart">Start</button>
+    </div>
+    <div id="clock" class="blue">
+      <input
+        type="text"
+        value="00"
+        class="clocktime"
+        id="clock-minutes"
+        onkeypress="enterMinutes(event)"
+      />
+      <span>:</span>
+      <input type="text" value="00" class="clocktime" id="clock-seconds" />
+    </div>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
