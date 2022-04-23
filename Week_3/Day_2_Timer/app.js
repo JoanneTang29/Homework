@@ -1,28 +1,30 @@
 // when the document is loaded, trigger the "documentLoaded" function
 window.addEventListener('DOMContentLoaded', documentLoaded, false);
 
-var startTime;
-var limit;
-var timer;
+let startTime;
+let limit;
+let timer;
 
 function documentLoaded() {
   "use strict";
 
   // listen for mouse clicks on the button
-  document.getElementById("btnStart").addEventListener("click", botaoClicked, false);
+  // document.getElementById("btnStart").addEventListener("click", buttonClicked, false);
 
   console.log("Document loader");
 }
 
 // when we click on the button, we save the current time, and the time limit. We then
 // create a timer to execute the "updateTime" function once a second.
-function botaoClicked() {
+function buttonClicked() {
   "use strict";
 
   startTime = new Date();
 
-  limit = parseInt(document.getElementById("txtTempo").value);
+  console.log("start time", startTime);
 
+  limit = parseInt(document.getElementById("txtTempo").value);
+  
   clearInterval(timer);
   timer = setInterval(updateTime, 1000);
 }
@@ -53,7 +55,7 @@ function updateTime() {
   document.getElementById("clock-seconds").value = seconds;
 
   // check if we are above the time limit and set the color of the timer accordingly
-  if (minutes >= limit) {
+  if (elapsed >= limit) {
     document.getElementById("clock").className = "red";
   } else {
     document.getElementById("clock").className = "blue";
@@ -62,12 +64,26 @@ function updateTime() {
 }
 
 function enterMinutes(event) {
-  if (event.keyCode == 13) {
+  if (event.keyCode === 13) {
     document.getElementById('clock-seconds').focus();
      console.log("Enter key is pressed");
      return true;
   } else {
      return false;
+  }
+}
+
+function enterSeconds (event) {
+  if (event.keyCode === 13) {
+    let clockMinutes = parseInt(document.getElementById('clock-minutes').value);
+    let clockSeconds = parseInt(document.getElementById('clock-seconds').value);
+    console.log("minutes", clockMinutes, typeof(clockMinutes));
+    console.log("seconds", clockSeconds, typeof(clockSeconds));
+    let totalSeconds = ((clockMinutes * 60) + (clockSeconds));
+    limit = totalSeconds;
+    startTime = new Date();
+    clearInterval(timer);
+    timer = setInterval(updateTime, 1000);
   }
 }
 
