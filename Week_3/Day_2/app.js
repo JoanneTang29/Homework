@@ -1,4 +1,3 @@
-
 const colors = ['#f6bd60', '#d90429', '#118ab2', 'white'];
 let counter = 0;
 
