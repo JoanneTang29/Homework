@@ -37,13 +37,14 @@ app.get('/greeting/:name', (req, res) => {
 app.get('/tip/:total/:tipPercentage', (req, res) => {
   const { total, tipPercentage } = req.params;
   const tip = total * (tipPercentage / 100);
+  tip.toString;
   res.send(200, tip);
 });
 
 app.get('/magic/:question', (req, res) => {
   const randomResponse =
     magicResponse[Math.floor(Math.random() * magicResponse.length)];
-  res.send(`<h1>${req.params['question']}, ${randomResponse} </h1>`);
+  res.send(200, `<h1>${req.params['question']}? ${randomResponse} </h1>`);
 });
 
 app.listen(port, () => {
