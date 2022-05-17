@@ -14,6 +14,8 @@ app.set('view engine', 'jsx');
 
 app.engine('jsx', require('express-react-views').createEngine());
 
+app.use(express.urlencoded({ extended: false }));
+
 app.use((req, res, next) => {
   console.log('I run for all routes');
   next();
@@ -47,6 +49,7 @@ app.get('/fruits/:indexOfFruitsArray', (req, res) => {
 
 // POST REQUEST
 app.post('/fruits', (req, res) => {
+  console.log('here is the request', req.body);
   if (req.body.readyToEat === 'on') {
     //if checked, req.body.readyToEat is set to 'on'
     req.body.readyToEat = true; //do some data correction
