@@ -2,7 +2,7 @@ const React = require('react');
 
 const myStyle = {
     color: '#ffffff',
-    backgroundColor: '#000000',
+    backgroundColor: '#e76f51',
   };
 class Index extends React.Component{
    render(){
@@ -14,7 +14,7 @@ class Index extends React.Component{
                 {pokemon.map((pokemon, i) => {
                     return(
                         <li>
-                            <text>{capitalize(pokemon.name)}</text>
+                            <a href={`/pokemon/${i}`}>{capitalize(pokemon.name)}</a>
                         </li>
                     )
                 })}
