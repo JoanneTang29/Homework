@@ -21,15 +21,6 @@ class Show extends React.Component{
             <img src={image}></img>
             <br></br>
             <a href="../pokemon" style={linkStyle}>BACK</a>
-            {/* <ul>
-                {pokemon.map((pokemon, i) => {
-                    return(
-                        <li>
-                            <a href={`/pokemon/${i}`}>{capitalize(pokemon.name)}</a>
-                        </li>
-                    )
-                })}
-            </ul> */}
         </div>
     )
     }
