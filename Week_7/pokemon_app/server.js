@@ -5,13 +5,6 @@ const port = 3000;
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
-app.use(express.urlencoded({ extended: false }));
-
-app.use((req, res, next) => {
-  console.log('I run for all routes');
-  next();
-});
-
 const pokemon = require('./models/pokemon');
 
 app.get('/', (req, res) => {

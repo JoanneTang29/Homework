@@ -2,8 +2,12 @@ const React = require('react');
 
 const myStyle = {
     color: '#ffffff',
-    backgroundColor: '#e76f51',
+    backgroundColor: '#e63946',
   };
+
+const linkStyle = {
+    fontSize: '15pt'
+};
 class Show extends React.Component{
    render(){
     const pokemon = this.props.pokemon;
@@ -13,10 +17,10 @@ class Show extends React.Component{
     return(
         <div style={myStyle}>
             <h1>Gotta Catch 'Em All</h1>
-            <h2>{pokemon.name}</h2>
+            <h2>{capitalize(pokemon.name)}</h2>
             <img src={image}></img>
             <br></br>
-            <a href="../pokemon">BACK</a>
+            <a href="../pokemon" style={linkStyle}>BACK</a>
             {/* <ul>
                 {pokemon.map((pokemon, i) => {
                     return(

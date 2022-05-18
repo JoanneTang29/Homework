@@ -4,6 +4,11 @@ const myStyle = {
     color: '#ffffff',
     backgroundColor: '#e76f51',
   };
+
+const linkStyle = {
+    color: '#bde0fe',
+    fontSize: '15pt',
+};
 class Index extends React.Component{
    render(){
     const {pokemon} = this.props;
@@ -14,7 +19,7 @@ class Index extends React.Component{
                 {pokemon.map((pokemon, i) => {
                     return(
                         <li>
-                            <a href={`/pokemon/${i}`}>{capitalize(pokemon.name)}</a>
+                            <a href={`/pokemon/${i}`} style={linkStyle}>{capitalize(pokemon.name)}</a>
                         </li>
                     )
                 })}
