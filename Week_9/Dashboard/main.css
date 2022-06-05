@@ -20,11 +20,10 @@ main > div {
     grid-template-areas: 'sidebar reviews rating analysis'
     'sidebar visitors visitors visitors'
     'sidebar visitors visitors visitors';
-    grid-template-columns: 200px;
-    /* padding: 10px; */
+    grid-template-columns: 150px;
     height: 100%;
     width: 100%;
-    grid-gap: 2em;
+    grid-gap: 1em;
 }
 
 .sidebar {
@@ -33,7 +32,6 @@ main > div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em;
     border-radius: 25px;
 }
 
@@ -61,6 +59,11 @@ main > div {
     background-color: #be95c4;
 }
 
+.analysis > h2 {
+    display: flex;
+    justify-content: center;
+}
+
 .visitors {
     grid-area: visitors;
     border: 2px solid #ccd5ae;
@@ -68,6 +71,6 @@ main > div {
 
 .visitorGraph {
     height: 200px;
-    width: 300px;
-    background-color: pink;
+    width: 100%;
+    background-color: #fec89a;
 }
