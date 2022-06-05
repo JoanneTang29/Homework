@@ -1,0 +1,73 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ccd5ae;
+}
+
+main {
+    display: flex;
+    background-color: white; 
+    margin: 2em;
+    padding: 1em;
+    border-radius: 25px;
+    min-width: min-content;
+}
+
+main > div {
+    display: grid;
+    grid-template-areas: 'sidebar reviews rating analysis'
+    'sidebar visitors visitors visitors'
+    'sidebar visitors visitors visitors';
+    grid-template-columns: 200px;
+    /* padding: 10px; */
+    height: 100%;
+    width: 100%;
+    grid-gap: 2em;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.sidebar p:hover {
+    font-size: large;
+}
+
+.reviews, .rating, .analysis, .visitors {
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.reviews {
+    grid-area: reviews;
+    background-color: #fec89a;
+}
+
+.rating {
+    grid-area: rating;
+    background-color: #ffb5a7;
+}
+
+.analysis {
+    grid-area: analysis;
+    background-color: #be95c4;
+}
+
+.visitors {
+    grid-area: visitors;
+    border: 2px solid #ccd5ae;
+}
+
+.visitorGraph {
+    height: 200px;
+    width: 300px;
+    background-color: pink;
+}

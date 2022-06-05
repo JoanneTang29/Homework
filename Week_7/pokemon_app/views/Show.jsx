@@ -3,7 +3,7 @@ const React = require('react');
 const myStyle = {
     color: '#ffffff',
     backgroundColor: '#e63946',
-  };
+};
 
 const linkStyle = {
     fontSize: '15pt'
